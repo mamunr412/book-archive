@@ -16,7 +16,7 @@ const displayBook = data => {
     const count = document.getElementById("books-count");
     // error 
     if (data.docs.length === 0) {
-        count.innerHTML = `<h3 class="text-center">no result found</h3>`
+        count.innerHTML = `<h3 class="text-center">No result found</h3>`
     }
     else {
         count.innerHTML = `<h3 class="mb-5"> ${data.numFound} hits</h3>`
