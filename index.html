@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <style>
+        #image {
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- input section  -->
+    <div class="input-group mb-3 w-50 mx-auto mt-5">
+        <input id="input-field" type="text" class="form-control" placeholder="Enter Book name"
+            aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button onclick="getinput()" class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+    </div>
+    <!-- show books number hits -->
+    <div id="books-count" class="mx-5 mt-5 fs-1">
+    </div>
+    <!-- show all book  -->
+    <div id="display-books" class="row row-cols-md-3 g-4 container mx-auto">
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
